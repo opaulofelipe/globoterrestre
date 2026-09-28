@@ -1,0 +1,41 @@
+ATLAS — GLOBO GEOPOLÍTICO
+
+COMO ABRIR
+1. Extraia o ZIP inteiro para uma pasta.
+2. Abra index.html em um navegador atualizado (Chrome, Edge, Firefox ou Safari).
+Não é necessário instalar nada, usar servidor ou conectar à internet.
+Mantenha os arquivos e a pasta vendor juntos.
+No celular, o visualizador de arquivos pode não executar JavaScript: abra o projeto em um navegador ou hospede a pasta em um servidor estático.
+
+CONTROLES
+• Arraste para girar o globo; role ou pince com dois dedos para zoom.
+• Clique em um país para colorir seu território de roxo.
+• A seleção é individual: clicar em outro país substitui a seleção.
+• Clique no oceano ou em Limpar seleção para remover o destaque.
+• Use a busca para localizar países pequenos; Enter seleciona o primeiro resultado.
+• Os nomes são exibidos em português, quando disponíveis na base.
+• Nomes sobrepostos são ocultados automaticamente. Aumente o zoom para revelar mais nomes.
+• O nome do país selecionado recebe prioridade, além de um marcador.
+• Com o globo em foco, use setas para girar e + / - para zoom.
+
+ARQUIVOS
+index.html — estrutura da interface.
+style.css — aparência e adaptação a telas menores.
+app.js — projeção, desenho, rotação, seleção, busca e controles.
+dados.js — polígonos e nomes, incorporados localmente.
+vendor/d3.min.js — D3 versão 7, biblioteca local.
+
+CARTOGRAFIA
+Natural Earth, Admin 0 – Countries, escala original 1:10m.
+https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/
+Origem do GeoJSON:
+https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_10m_admin_0_countries.geojson
+258 feições: países, dependências e outros territórios; esse total não é uma contagem de Estados soberanos.
+A base inclui microestados como Vaticano e Mônaco. Os contornos foram simplificados para uso interativo e não servem para medições precisas.
+Fronteiras e áreas disputadas seguem a representação do Natural Earth; o mapa não constitui reconhecimento político nem uma base de fronteiras atualizada em tempo real.
+Natural Earth disponibiliza seus dados em domínio público.
+
+TECNOLOGIA
+HTML, CSS e JavaScript, Canvas 2D e projeção ortográfica D3.
+Documentação: https://d3js.org/d3-geo
+D3: https://d3js.org — licença ISC incluída em vendor/LICENSE-D3.txt.
